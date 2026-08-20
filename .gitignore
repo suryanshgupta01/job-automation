@@ -1,0 +1,4 @@
+node_modules/
+.indeed-chrome-profile
+career-ops
+.env

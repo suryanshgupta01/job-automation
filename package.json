@@ -4,12 +4,21 @@
   "main": "naukri-profile-refresh.js",
   "scripts": {
     "refresh": "node naukri-profile-refresh.js",
-    "login": "node naukri-profile-refresh.js login"
+    "login": "node naukri-profile-refresh.js login",
+    "indeed": "node auto-apply-runner.js indeed",
+    "indeed:login": "node auto-apply-runner.js indeed login",
+    "indeed:live": "node auto-apply-runner.js indeed --live",
+    "wellfound": "node auto-apply-runner.js wellfound",
+    "wellfound:login": "node auto-apply-runner.js wellfound login",
+    "wellfound:live": "node auto-apply-runner.js wellfound --live",
+    "naukri": "node auto-apply-runner.js naukri",
+    "naukri:login": "node auto-apply-runner.js naukri login",
+    "naukri:live": "node auto-apply-runner.js naukri --live"
   },
-  "keywords": ["naukri", "playwright", "automation"],
+  "keywords": ["naukri", "indeed", "wellfound", "playwright", "automation", "auto-apply"],
   "author": "",
   "license": "ISC",
-  "description": "Keeps your Naukri profile recently-updated by toggling the resume headline on a schedule",
+  "description": "Auto-apply to jobs on Indeed, Wellfound, and Naukri with Playwright automation",
   "dependencies": {
     "playwright-core": "^1.61.1",
     "playwright-extra": "^4.3.6",
